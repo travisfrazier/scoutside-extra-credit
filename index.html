@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Extra Credit</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+	</head>
+	<body>
+		<div id="app">
+			<header v-bind:class="{ scroll: isScrolled }">
+				<p
+					v-bind:class="{ pinkText: showMenu }"
+					v-on:click="openMenu"
+					id="menuButton"
+				>
+					MENU
+				</p>
+				<div class="main-header">
+					<h2>Evewear</h2>
+					<img id="logo" v-bind:src="logo" />
+				</div>
+				<p id="mobileBag" v-bind:class="{ pinkText: showMenu }">Bag (0)</p>
+				<nav v-bind:class="{ navMobile: showMenu }">
+					<ul v-bind:class="{ linksMobile: showMenu }">
+						<li>Shop</li>
+						<li>About</li>
+						<li>Lookbook</li>
+					</ul>
+					<ul v-bind:class="{ linksMobile: showMenu }">
+						<li>Account</li>
+						<li>Search</li>
+						<li class="bag" id="bag1">Bag (0)</li>
+					</ul>
+				</nav>
+			</header>
+			<div class="wrapper">
+				<div class="container">
+					<section class="top-section">
+						<div>
+							<p>All Styles</p>
+							<h2>Shop</h2>
+						</div>
+						<div class="sort">
+							<span>Sort by</span>
+							<span>Featured &#x25BE;</span>
+						</div>
+					</section>
+					<section class="all-products">
+						<figure>
+							<img v-bind:src="image5" />
+							<h4>The Goddess</h4>
+							<p>From $52.00</p>
+							<div v-on:click="imageToggle" class="swatches">
+								<img
+									class="swatchOne"
+									style="width: 2rem; margin-top: 1rem;"
+									src="https://cdn.shopify.com/s/files/1/2678/2854/t/31/assets/white-cherry_180x.png?10375"
+								/>
+								<img
+									class="swatchTwo"
+									style="width: 2rem; margin-top: 1rem;"
+									src="https://cdn.shopify.com/s/files/1/2678/2854/t/31/assets/pink-cherry_180x.png?10375"
+								/>
+							</div>
+						</figure>
+						<figure>
+							<img src="images/one.jpg" />
+							<h4>The Goddess</h4>
+							<p>From $52.00</p>
+						</figure>
+						<figure>
+							<img src="images/two.jpg" />
+							<h4>The Goddess</h4>
+							<p>From $52.00</p>
+						</figure>
+						<figure>
+							<img src="images/three.jpg" />
+							<h4>The Goddess</h4>
+							<p>From $52.00</p>
+						</figure>
+						<figure>
+							<img src="images/four.jpg" />
+							<h4>The Goddess</h4>
+							<p>From $52.00</p>
+						</figure>
+						<figure>
+							<img src="images/six.jpg" />
+							<h4>The Goddess</h4>
+							<p>From $52.00</p>
+						</figure>
+						<figure>
+							<img src="images/seven.jpg" />
+							<h4>The Goddess</h4>
+							<p>From $52.00</p>
+						</figure>
+						<figure>
+							<img src="images/eight.jpg" />
+							<h4>The Goddess</h4>
+							<p>From $52.00</p>
+						</figure>
+						<figure>
+							<img src="images/nine.jpg" />
+							<h4>The Goddess</h4>
+							<p>From $52.00</p>
+						</figure>
+					</section>
+				</div>
+			</div>
+			<footer>
+				<div class="top-footer">
+					<div class="container-two">
+						<div class="email">
+							<img src="images/footer.png" />
+							<div>
+								<p>Late night emails only</p>
+								<input placeholder="Email address" />
+							</div>
+						</div>
+						<div class="links">
+							<ul>
+								<li>Account</li>
+								<li>Log in</li>
+								<li>Register</li>
+							</ul>
+							<ul>
+								<li>Contact</li>
+								<li>hello@evewear.com</li>
+								<li>Instagram</li>
+								<li>Facebook</li>
+							</ul>
+							<ul>
+								<li>Privacy</li>
+								<li>Refunds</li>
+								<li>Terms & Conditions</li>
+							</ul>
+							<ul>
+								<li>Copyright 2019</li>
+								<li>Site Credit</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-footer">
+					<p>You are made of stars</p>
+				</div>
+			</footer>
+		</div>
+		<!-- Vue Js and Main Js file -->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+		<script src="./main.js"></script>
+	</body>
+</html>
