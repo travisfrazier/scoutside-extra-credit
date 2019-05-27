@@ -6,7 +6,7 @@ const app = new Vue({
 		image5: './images/five.jpg',
 		thisImage: true,
 		isScrolled: false,
-		logo: './images/logo.png'
+		logo: './images/blue-heart.png'
 	},
 	methods: {
 		imageToggle(event) {
@@ -27,9 +27,9 @@ const app = new Vue({
 		openMenu() {
 			this.showMenu = !this.showMenu;
 			if (this.showMenu) {
-				this.logo = './images/newLogo.png';
+				this.logo = './images/pink-heart.png';
 			} else {
-				this.logo = './images/logo.png';
+				this.logo = './images/blue-heart.png';
 			}
 		}
 	},

@@ -65,7 +65,7 @@ header {
 		top: 12%;
 		width: 50%;
 		@media only screen and (max-width: 800px) {
-			top: 12%;
+			top: 25%;
 		}
 		h2 {
 			font-size: 2.5rem;
@@ -76,6 +76,7 @@ header {
 		}
 		img {
 			display: none;
+			width: 2.5rem;
 			@media only screen and (max-width: 800px) {
 				display: inline;
 			}
@@ -199,6 +200,12 @@ nav {
 			width: 90%;
 		}
 	}
+}
+
+#swatchOne,
+#swatchTwo {
+	width: 2rem;
+	margin-top: 1rem;
 }
 
 //Footer Section ---------- //
